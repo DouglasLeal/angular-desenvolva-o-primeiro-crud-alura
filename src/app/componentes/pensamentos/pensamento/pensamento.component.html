@@ -2,7 +2,7 @@
     <img src="/assets/imagens/{{pensamento.modelo}}.png" alt="">
     <p class="conteudo">{{pensamento.conteudo}}</p>
     <p class="autoria"><b>{{pensamento.autoria}}</b></p>
-    <button class="botao-editar">
+    <button routerLink="/editarPensamento/{{pensamento.id}}" class="botao-editar">
         <img src="/assets/imagens/icone-editar.png" alt="">
     </button>
     <button routerLink="/excluirPensamento/{{pensamento.id}}" class="botao-excluir">
