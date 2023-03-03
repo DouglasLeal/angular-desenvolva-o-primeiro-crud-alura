@@ -7,4 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class PensamentoComponent {
   @Input() pensamento = {conteudo: "", autoria: "", modelo: ""};
+
+  public larguraPensamento(): string{
+    if(this.pensamento.conteudo.length >= 256){
+      return "pensamento-g";
+    }
+
+    return "pensamento-p";
+  }
 }
